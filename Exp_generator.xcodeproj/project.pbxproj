@@ -8,7 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		5BC75D231AC3B9DF00AF8415 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5BC75D221AC3B9DF00AF8415 /* main.c */; };
+		5BC75D461AC3BAC200AF8415 /* rngs.c in Sources */ = {isa = PBXBuildFile; fileRef = 5BC75D451AC3BAC200AF8415 /* rngs.c */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BC75D401AC3BA4A00AF8415 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BC75D3C1AC3BA4A00AF8415 /* exp_SerGenerator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BC75D321AC3BA4A00AF8415;
+			remoteInfo = exp_SerGenerator;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5BC75D1D1AC3B9DF00AF8415 /* CopyFiles */ = {
@@ -25,6 +36,9 @@
 /* Begin PBXFileReference section */
 		5BC75D1F1AC3B9DF00AF8415 /* Exp_generator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Exp_generator; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC75D221AC3B9DF00AF8415 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		5BC75D3C1AC3BA4A00AF8415 /* exp_SerGenerator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = exp_SerGenerator.xcodeproj; path = ../exp_SerGenerator/exp_SerGenerator.xcodeproj; sourceTree = "<group>"; };
+		5BC75D421AC3BA8B00AF8415 /* rngs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rngs.h; sourceTree = "<group>"; };
+		5BC75D451AC3BAC200AF8415 /* rngs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rngs.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +55,7 @@
 		5BC75D161AC3B9DF00AF8415 = {
 			isa = PBXGroup;
 			children = (
+				5BC75D3C1AC3BA4A00AF8415 /* exp_SerGenerator.xcodeproj */,
 				5BC75D211AC3B9DF00AF8415 /* Exp_generator */,
 				5BC75D201AC3B9DF00AF8415 /* Products */,
 			);
@@ -57,9 +72,19 @@
 		5BC75D211AC3B9DF00AF8415 /* Exp_generator */ = {
 			isa = PBXGroup;
 			children = (
+				5BC75D451AC3BAC200AF8415 /* rngs.c */,
+				5BC75D421AC3BA8B00AF8415 /* rngs.h */,
 				5BC75D221AC3B9DF00AF8415 /* main.c */,
 			);
 			path = Exp_generator;
+			sourceTree = "<group>";
+		};
+		5BC75D3D1AC3BA4A00AF8415 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BC75D411AC3BA4A00AF8415 /* exp_SerGenerator */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +131,12 @@
 			mainGroup = 5BC75D161AC3B9DF00AF8415;
 			productRefGroup = 5BC75D201AC3B9DF00AF8415 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5BC75D3D1AC3BA4A00AF8415 /* Products */;
+					ProjectRef = 5BC75D3C1AC3BA4A00AF8415 /* exp_SerGenerator.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5BC75D1E1AC3B9DF00AF8415 /* Exp_generator */,
@@ -113,12 +144,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		5BC75D411AC3BA4A00AF8415 /* exp_SerGenerator */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = exp_SerGenerator;
+			remoteRef = 5BC75D401AC3BA4A00AF8415 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5BC75D1B1AC3B9DF00AF8415 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5BC75D231AC3B9DF00AF8415 /* main.c in Sources */,
+				5BC75D461AC3BAC200AF8415 /* rngs.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
